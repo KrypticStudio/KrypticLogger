@@ -4,7 +4,7 @@
 ### Kryptic Studio ###
 
 # Local Libraries
-from Logger.logger import log
+from KrypticLogger.logger import log
 # Libraries
 
 # Standard Libraries

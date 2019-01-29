@@ -32,7 +32,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("Logger/Logs/log.txt", "a")
+            logFile = open("KrypticLogger/Logs/log.txt", "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -54,7 +54,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("Logger/Logs/log.txt", "a")
+            logFile = open("KrypticLogger/Logs/log.txt", "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -70,7 +70,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("Logger/Logs/log.txt", "a")
+            logFile = open("KrypticLogger/Logs/log.txt", "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -86,7 +86,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("Logger/Logs/log.txt", "a")
+            logFile = open("KrypticLogger/Logs/log.txt", "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -102,7 +102,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("Logger/Logs/log.txt", "a")
+            logFile = open("KrypticLogger/Logs/log.txt", "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -118,7 +118,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("Logger/Logs/log.txt", "a")
+            logFile = open("KrypticLogger/Logs/log.txt", "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -134,7 +134,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("Logger/Logs/log.txt", "a")
+            logFile = open("KrypticLogger/Logs/log.txt", "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
