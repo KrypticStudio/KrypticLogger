@@ -25,7 +25,18 @@ import from KrypticLogger.logger import log
 ```
 2. Call it anywhere!
 ```python
-#Example
+### Parameters
+    # log = True #Logs to terminal or cmd
+    # write = Ture #Writes log to file
+    # time = True #Adds current time to log
+log.LOG_EXAMPLE("Message", log = True, write = True, time = True)
+```
+3. EXAMPLE
+```python
+# Example
+import from KrypticLogger.logger import log
+
+# Calling Logs
 log.debug("Debugging Example", log = True, write = True, time = True)
 log.error("Error Example", log = True, write = True, time = True, code="Error Code", critical = True)
 log.info("Info Example", log = True, write = True, time = True)
