@@ -15,11 +15,11 @@ $ pip install sty
 
 
 ```bash
-$ git clone https://github.com/KrypticStudio/Kryptic-Hacking-Tools
+$ git clone https://github.com/KrypticStudio/KrypticLogger.git
 ```
 
 ## Usage
-1. Import KrypticLogger
+1. Import KrypticLogger!
 ```python
 import from KrypticLogger.logger import log
 ```
