@@ -2,26 +2,25 @@
 
 KrypticLogger is a tool to help better organize and minimizing the amount of code while logging!
 
-## Required Libraries
-
-1. sty
-```bash
-$ pip install sty
-```
-
 ## Installation
 
 1. Clone Repository to Project Folder.
-
-
 ```bash
-$ git clone https://github.com/KrypticStudio/KrypticLogger.git
+$ git clone https://github.com/KrypticStudio/KrypticLogger
+```
+2. Install requirements
+```bash
+$ pip install -r requirements.txt
+```
+3. Install setup.py
+```bash
+$ python3 setup.py install
 ```
 
 ## Usage
 1. Import KrypticLogger!
 ```python
-import from KrypticLogger.logger import log
+from KrypticLogger import log #as log
 ```
 2. Call it anywhere!
 ```python
@@ -34,7 +33,7 @@ log.LOG_EXAMPLE("Message", log = True, write = True, time = True)
 3. EXAMPLE
 ```python
 # Example
-import from KrypticLogger.logger import log
+from KrypticLogger import log #as log
 
 # Calling Logs
 log.debug("Debugging Example", log = True, write = True, time = True)
