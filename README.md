@@ -21,9 +21,12 @@ $ python3 setup.py install
 1. Import KrypticLogger!
 ```python
 from KrypticLogger import log #as log
+import KrypticLogger.logger as logPath
 ```
 2. Call it anywhere!
 ```python
+#### Set path for log file
+	logPath.path = "Logs/log.txt"
 ### Parameters
     # log = True #Logs to terminal or cmd
     # write = Ture #Writes log to file
@@ -33,7 +36,11 @@ log.LOG_EXAMPLE("Message", log = True, write = True, time = True)
 3. EXAMPLE
 ```python
 # Example
-from KrypticLogger import log #as log
+from KrypticLogger.logger import log
+import KrypticLogger.logger as logPath
+
+# Setting Log Path(Optional) ***DEFAULT "log.txt"
+logPath.path = "Logs/log.txt"
 
 # Calling Logs
 log.debug("Debugging Example", log = True, write = True, time = True)

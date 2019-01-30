@@ -17,9 +17,11 @@ from sty import fg, bg, ef, rs
 def timeLocal():
         localtime = time.asctime(time.localtime(time.time()) )
         return(localtime)
-
+        
+path = "log.txt"
 
 class log(object):
+
     @staticmethod
     def info(message, log = True, write = False, time = False):
         
@@ -32,7 +34,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("log.txt", "a")
+            logFile = open(path, "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -54,7 +56,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("log.txt", "a")
+            logFile = open(path, "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -70,7 +72,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("log.txt", "a")
+            logFile = open(path, "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -86,7 +88,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("log.txt", "a")
+            logFile = open(path, "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -102,7 +104,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("log.txt", "a")
+            logFile = open(path, "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -118,7 +120,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("log.txt", "a")
+            logFile = open(path, "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 
@@ -134,7 +136,7 @@ class log(object):
         if log == True:
                 print(logData)
         if write == True:
-            logFile = open("log.txt", "a")
+            logFile = open(path, "a")
             logFile.write(logDataW + "\n")
             logFile.close()
 

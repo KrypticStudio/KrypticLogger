@@ -8,7 +8,7 @@ setuptools.setup(
     name="KrypticLogger",
  
     #version of the module
-    version="0.0.2",
+    version="0.2",
  
     #Name of Author
     author="Kryptic Studio",
