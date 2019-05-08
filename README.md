@@ -3,6 +3,11 @@
 KrypticLogger is a tool to help better organize and minimizing the amount of code while logging!
 
 ## Installation
+1. Pip Installation
+```bash
+pip install KrypticLogger
+```
+### OR
 
 1. Clone Repository to Project Folder.
 ```bash
@@ -28,10 +33,13 @@ import KrypticLogger as logPath
 #### Set path for log file
 	logPath.path = "Logs/log.txt"
 ### Parameters
-    # log = True #Logs to terminal or cmd
-    # write = Ture #Writes log to file
-    # time = True #Adds current time to log
-log.LOG_EXAMPLE("Message", log = True, write = True, time = True)
+    # tag = "EXAMPLE" #Customize the notifier tag. ##ONLY AVAILABLE FOR CUSTOM
+    # log = True #Logs to terminal or cmd.
+    # write = False #Writes log to file
+    # time = False #Adds current time to log
+    # code = "0x00" #Custime code for error, organization, etc...
+    # critical = False #Displays weather the message is critical or not.
+log.custom(tag, message, log = True, write = False, time = False, code = "", critical = False)
 ```
 3. EXAMPLE
 ```python
@@ -42,14 +50,18 @@ import KrypticLogger as logPath
 # Setting Log Path(Optional) ***DEFAULT "log.txt"
 logPath.path = "Logs/log.txt"
 
+#Message to be displayed...
+Message = "Kryptic Studio Test. Kryptic Logger"
+
 # Calling Logs
-log.debug("Debugging Example", log = True, write = True, time = True)
-log.error("Error Example", log = True, write = True, time = True, code="Error Code", critical = True)
-log.info("Info Example", log = True, write = True, time = True)
-log.log("Logging Example", log = True, write = True, time = True)
-log.success("Success Example", log = True, write = True, time = True)
-log.track("Tracking Example", log = True, write = True, time = True)
-log.warn("Warning Example", log = True, write = True, time = True)
+log.debug(Message)
+log.error(Message)
+log.info(Message)
+log.log(Message)
+log.success(Message)
+log.track(Message)
+log.warn(Message) 
+log.custom("Custom Tag", Message)
 ```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
